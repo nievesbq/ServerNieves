@@ -8,10 +8,18 @@ public class Message {
     private String nick;
     private String message;
 
-    public Message(){}
+    private Message(){ }
 
     public Message(String nick, String message){
         this.nick = nick;
         this.message = message;
+    }
+
+    public String getNick() {
+        return nick;
+    }
+
+    public String getMessage() {
+        return message;
     }
 }
