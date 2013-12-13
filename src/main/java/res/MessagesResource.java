@@ -8,7 +8,6 @@ import content.Messages;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.ArrayList;
 
 /**
  * Created by bqnieves on 12/12/13.
@@ -19,22 +18,28 @@ import java.util.ArrayList;
 @Consumes(MediaType.APPLICATION_JSON)
 public class MessagesResource {
 
-    Messages allcontent;
+    Messages allContent;
 
     public MessagesResource(){
-        allcontent = new Messages();
+
     };
 
     @GET
     @Timed
     public Response getMessages(@QueryParam("seq") Optional<String> seq) {
-
-        int seqAsked = Integer.parseInt(seq.toString()) ;
-        if( seqAsked < allcontent.getSeq() ){
-
-            return Response.status(Response.Status.CREATED).entity(allcontent.response(seqAsked)).build();
+        int seqAsked;
+        try{
+            seqAsked = Integer.parseInt(seq.toString()) ;
         }
-        else return Response.status(Response.Status.BAD_REQUEST).build();
+        catch (Exception e){
+            return Response.status(Response.Status.BAD_REQUEST).build();
+        }
+
+        if ( seqAsked > allContent.getSeq() || seqAsked < 0) seqAsked = allContent.getSeq() ;
+
+        Messages response = new Messages( allContent.getList().subList(seqAsked, allContent.getSeq()), allContent.getSeq());
+
+        return Response.status(Response.Status.CREATED).entity(response).build();
 
     }
 
@@ -47,7 +52,7 @@ public class MessagesResource {
         }
         else
             //add it
-            allcontent.addMessage(msg);
-            return Response.status(Response.Status.CREATED).entity(msg).build();
+            allContent.addMessage(msg);
+        return Response.status(Response.Status.CREATED).entity(msg).build();
     }
 }

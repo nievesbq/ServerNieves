@@ -11,17 +11,17 @@ import java.util.List;
 public class Messages { //persistence class
 
     @JsonProperty
-    private ArrayList<Message> messages;
+    private List<Message> messages;
 
     @JsonProperty
     private int last_seq;
 
-    public Messages(){
+    private Messages(){
         messages = new ArrayList<Message>();
         last_seq = 0;
     }
 
-    public Messages(ArrayList<Message> messages, int last_seq ){
+    public Messages(List<Message> messages, int last_seq){
         this.messages = messages;
         this.last_seq = last_seq;
     }
@@ -31,7 +31,7 @@ public class Messages { //persistence class
         last_seq++;
     }
 
-    public ArrayList<Message> getList(){
+    public List<Message> getList(){
         return messages;
     }
 
@@ -45,11 +45,6 @@ public class Messages { //persistence class
 
     public void setLast_seq(int last_seq){
         this.last_seq=last_seq;
-    }
-
-    public Messages response(int seq){
-    //    return messages.subList(seq, last_s
-        return new Messages((ArrayList<Message>) messages.subList(seq, last_seq), last_seq);
     }
 
 

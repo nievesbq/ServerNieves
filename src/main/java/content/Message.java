@@ -1,11 +1,15 @@
 package content;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 /**
  * Created by bqnieves on 12/12/13.
  */
 public class Message {
 
+    @JsonProperty
     private String nick;
+    @JsonProperty
     private String message;
 
     private Message(){ }

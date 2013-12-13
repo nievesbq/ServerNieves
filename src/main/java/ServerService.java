@@ -21,8 +21,7 @@ public class ServerService extends Service<ServerConfiguration> {
     @Override
     public void run(ServerConfiguration configuration, Environment environment) {
 
-        MessagesResource messagesResource = new MessagesResource();
-        environment.addResource(messagesResource);
+        environment.addResource(new MessagesResource());
 
     }
 
