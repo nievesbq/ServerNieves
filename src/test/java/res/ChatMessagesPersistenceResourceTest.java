@@ -38,7 +38,21 @@ public class ChatMessagesPersistenceResourceTest extends ResourceTest {
     }
 
     @Test
-    public void numbSeq() throws Exception {
+    public void numbSeqGET() throws Exception {
+
+        ChatResponse chatResponse = new ChatResponse(new ArrayList<Message>(), 0);
+        when(chatMessagesPersistenceMock.fetchMessagesFromNumSeq(5)).thenReturn(chatResponse);
+
+        ChatResponse getResponse = client().resource("/chat-kata/api/chat?next_seq=5").get(ChatResponse.class);
+        assertThat(getResponse.getNext_Seq()).isEqualTo(chatResponse.getNext_Seq());
+
+        verify(chatMessagesPersistenceMock).fetchMessagesFromNumSeq(5);
+
+    }
+
+    @Test
+    public void responsePOST() throws Exception {
+
 
     }
 
