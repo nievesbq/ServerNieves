@@ -8,27 +8,26 @@ import java.util.List;
 /**
  * Created by bqnieves on 12/12/13.
  */
-public class Messages { //persistence class
+public class Messages {
 
     @JsonProperty
     private List<Message> messages;
 
     @JsonProperty
-    private int last_seq;
+    private int next_Seq;
 
     private Messages(){
-        messages = new ArrayList<Message>();
-        last_seq = 0;
+
     }
 
-    public Messages(List<Message> messages, int last_seq){
+    public Messages(List<Message> messages, int next_Seq){
         this.messages = messages;
-        this.last_seq = last_seq;
+        this.next_Seq = next_Seq;
     }
 
     public void addMessage(Message newMessage){
         messages.add(newMessage);
-        last_seq++;
+        next_Seq++;
     }
 
     public List<Message> getList(){
@@ -36,15 +35,15 @@ public class Messages { //persistence class
     }
 
     public int getSeq(){
-        return last_seq;
+        return next_Seq;
     }
 
     public void setMessages(ArrayList<Message> messages){
         this.messages=messages;
     }
 
-    public void setLast_seq(int last_seq){
-        this.last_seq=last_seq;
+    public void setNext_Seq(int next_Seq){
+        this.next_Seq = next_Seq;
     }
 
 
