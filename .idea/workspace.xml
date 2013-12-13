@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="579d893e-f581-48f5-9272-149317fb6f02" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/content/Messages.java" afterPath="$PROJECT_DIR$/src/main/java/content/Messages.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/res/MessagesResource.java" afterPath="$PROJECT_DIR$/src/main/java/res/MessagesResource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/content/ChatMessagesPersistence.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/res/ChatMessagesPersistenceResourceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/content/ChatMessagesPersistenceTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/res/ChatResource.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/content/ChatResponse.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/content/Messages.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/res/MessagesResource.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/ServerService.java" afterPath="$PROJECT_DIR$/src/main/java/ServerService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ServerNieves.iws" />
@@ -71,7 +77,7 @@
       <file leaf-file-name="ServerService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ServerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="56" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+            <state line="24" column="101" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0" vertical-offset="44" max-vertical-offset="480">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,10 +94,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessagesResource.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/res/MessagesResource.java">
+      <file leaf-file-name="ChatResource.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/res/ChatResource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="579" selection-end="579" vertical-scroll-proportion="0.68421054" vertical-offset="0" max-vertical-offset="1005">
+            <state line="44" column="9" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0" vertical-offset="312" max-vertical-offset="915">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChatMessagesPersistenceResourceTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/res/ChatMessagesPersistenceResourceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="38" selection-start="843" selection-end="843" vertical-scroll-proportion="0.51834863" vertical-offset="224" max-vertical-offset="780">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,27 +119,45 @@
       <file leaf-file-name="Message.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/content/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="24" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+            <state line="13" column="0" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Messages.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/content/Messages.java">
+      <file leaf-file-name="ChatResponse.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/content/ChatResponse.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="21" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
+            <state line="27" column="48" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="675">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#477#478#0" expanded="true" />
+                <element signature="e#508#509#0" expanded="true" />
+                <element signature="e#563#564#0" expanded="true" />
                 <element signature="e#603#604#0" expanded="true" />
-                <element signature="e#634#635#0" expanded="true" />
-                <element signature="e#660#661#0" expanded="true" />
-                <element signature="e#691#692#0" expanded="true" />
-                <element signature="e#750#751#0" expanded="true" />
-                <element signature="e#788#789#0" expanded="true" />
-                <element signature="e#832#833#0" expanded="true" />
-                <element signature="e#872#873#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#666#667#0" expanded="true" />
+                <element signature="e#711#712#0" expanded="true" />
+                <element signature="e#751#752#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChatMessagesPersistence.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/content/ChatMessagesPersistence.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0" vertical-offset="117" max-vertical-offset="540">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ChatMessagesPersistenceTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/content/ChatMessagesPersistenceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,9 +179,15 @@
         <option value="$PROJECT_DIR$/src/main/java/content/MessagesConfiguration.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/content/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ServerService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/content/MessagesTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/res/MessagesResourceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/content/Messages.java" />
+        <option value="$PROJECT_DIR$/src/main/java/content/ChatResponse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/content/ChatMessagesPersistence.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ServerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/res/MessagesResource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/res/ChatResource.java" />
+        <option value="$PROJECT_DIR$/src/test/java/res/ChatMessagesPersistenceResourceTest.java" />
       </list>
     </option>
   </component>
@@ -258,6 +299,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerNieves" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerNieves" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="content" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -393,9 +468,59 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="FullScreen" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Escritorio/ServerNieves" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../dropwizard" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
+    <property name="recentsLimit" value="5" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="content" />
+      <recent name="res" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ChatMessagesPersistenceResourceTest">
+    <configuration default="false" name="ServerService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ServerService" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ServerNieves" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="ChatMessagesPersistenceResourceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ServerNieves" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="res" />
+      <option name="MAIN_CLASS_NAME" value="res.ChatMessagesPersistenceResourceTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin" singleton="true">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
@@ -545,7 +670,16 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <list size="0" />
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Application.ServerService" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ChatMessagesPersistenceResourceTest" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ChatMessagesPersistenceResourceTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ServerService" />
+      </list>
+    </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -583,7 +717,11 @@
       <created>1386925467423</created>
       <updated>1386925467423</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="problems fixed&#10;">
+      <created>1386931880594</created>
+      <updated>1386931880594</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -595,22 +733,22 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.60103625" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32953367" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35142544" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19353071" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34507772" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4746114" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -654,7 +792,8 @@
     </option>
     <MESSAGE value="Generado .jar" />
     <MESSAGE value="problems fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="problems fixed" />
+    <MESSAGE value="problems fixed&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="problems fixed&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -680,7 +819,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/res/MessagesResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/res/ChatResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="9" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="855">
           <folding>
@@ -696,20 +835,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/content/Messages.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/content/ChatMessagesPersistence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="5" selection-start="531" selection-end="531" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="795">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#788#789#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -729,7 +858,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/res/MessagesResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/res/ChatResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="9" selection-start="842" selection-end="842" vertical-scroll-proportion="0.0" vertical-offset="257" max-vertical-offset="855">
           <folding>
@@ -745,20 +874,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/content/Messages.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/content/ChatMessagesPersistence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="43" selection-start="189" selection-end="189" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="915">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#788#789#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -778,7 +897,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/res/MessagesResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/res/ChatResource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="510">
           <folding>
@@ -794,20 +913,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/content/Messages.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/content/ChatMessagesPersistence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="46" selection-start="154" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="615">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#788#789#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -839,26 +948,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/content/Messages.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/14.0.1/guava-14.0.1.jar!/com/google/common/base/Optional.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-            <element signature="e#660#661#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#750#751#0" expanded="true" />
-            <element signature="e#788#789#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-          </folding>
+        <state line="20" column="25" selection-start="781" selection-end="784" vertical-scroll-proportion="0.4375" vertical-offset="40" max-vertical-offset="735">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ServerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="56" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+        <state line="24" column="101" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="480">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -872,16 +971,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/content/Message.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/content/ChatMessagesPersistenceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="24" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+        <state line="10" column="0" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/res/MessagesResource.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/content/ChatMessagesPersistence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="579" selection-end="579" vertical-scroll-proportion="0.68421054" vertical-offset="0" max-vertical-offset="1005">
+        <state line="20" column="0" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/content/ChatResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="48" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0" vertical-offset="104" max-vertical-offset="675">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+            <element signature="e#563#564#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/content/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/res/ChatResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="9" selection-start="1284" selection-end="1284" vertical-scroll-proportion="0.0" vertical-offset="312" max-vertical-offset="915">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/res/ChatMessagesPersistenceResourceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="38" selection-start="843" selection-end="843" vertical-scroll-proportion="0.51834863" vertical-offset="224" max-vertical-offset="780">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

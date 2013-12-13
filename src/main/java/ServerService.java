@@ -5,11 +5,13 @@ import com.yammer.dropwizard.Service;
 import com.yammer.dropwizard.config.Bootstrap;
 import com.yammer.dropwizard.config.Environment;
 import config.ServerConfiguration;
-import res.MessagesResource;
+import content.ChatMessagesPersistence;
+import res.ChatResource;
 
 public class ServerService extends Service<ServerConfiguration> {
 
     public static void main(String[] args) throws Exception {
+        args = new String[]{"server"};
         new ServerService().run(args);
     }
 
@@ -20,9 +22,8 @@ public class ServerService extends Service<ServerConfiguration> {
 
     @Override
     public void run(ServerConfiguration configuration, Environment environment) {
-
-        environment.addResource(new MessagesResource());
-
+        ChatMessagesPersistence chatChatMessagesPersistencePersistence = new ChatMessagesPersistence();
+        environment.addResource(new ChatResource(chatChatMessagesPersistencePersistence));
     }
 
 }
